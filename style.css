@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* write !important if the color is not visible on the screen */
+    /* this !important is only for better loaading of the color on the screen */
+    background-color: #ebf2ff !important;
+}
+.add_new_btn_mobile_only{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px 10px;
+    background: white;
+    width: 100%;
+    z-index: 3;
+}
+
+/* another way to add media query */
+@media(min-width: 768px){
+    .add_new_btn_mobile_only{
+        display: none;
+    }
+}
